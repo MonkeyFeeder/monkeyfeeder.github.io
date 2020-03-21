@@ -1,0 +1,31 @@
+.card-experience {
+    margin-bottom: 30px;
+}
+
+.card-experience .card-body {
+    padding: 10px 10px 5px;
+}
+
+.card-experience .card-body {
+    position: relative;
+}
+
+.card-experience .card-title {
+    margin-bottom: 0.15rem;
+}
+
+.card-experience .menuAdmin {
+    cursor: pointer;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.card-experience img {
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}

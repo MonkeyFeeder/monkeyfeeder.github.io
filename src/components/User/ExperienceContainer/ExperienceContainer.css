@@ -1,0 +1,23 @@
+.experience.container-fluid {
+    background-color: #FF7F51;
+} 
+
+/* background-color: #FF6B35; */
+
+.experience-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #435668;
+}
+
+.experience-section > h2 {
+    color: white;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.experience-section > p {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
