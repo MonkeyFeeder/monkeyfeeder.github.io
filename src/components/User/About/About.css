@@ -1,6 +1,15 @@
 .about-section {
     padding-top: 90px;
     padding-bottom: 40px;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .about-section {
+        padding-top: 90px;
+        padding-bottom: 40px;
+        width: 60%;
+        margin: 0 auto;
+    }
 }

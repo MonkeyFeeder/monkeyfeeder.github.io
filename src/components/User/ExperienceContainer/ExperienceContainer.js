@@ -1,5 +1,6 @@
 import React from 'react';
 import Experience from '../Experience/Experience';
+import Loader from 'react-loader-spinner'
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -7,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 // import Form from 'react-bootstrap/Form';
 
 import './ExperienceContainer.css';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 class ExperienceContainer extends React.Component {
     constructor(props) {
@@ -21,7 +23,7 @@ class ExperienceContainer extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3001/get-experiences')
+        fetch('https://app-d077afa0-d0a4-4d67-8720-1d7a756510d8.cleverapps.io/get-experiences')
         .then(resp => resp.json())
         .then(experiences => {
             this.setState({experiences})
@@ -52,7 +54,7 @@ class ExperienceContainer extends React.Component {
         data.append('fileExperience', this.state.fileExperience);
         data.append('fileName', this.state.fileExperience.name);
 
-        fetch('http://localhost:3001/new-experience', {
+        fetch('https://app-d077afa0-d0a4-4d67-8720-1d7a756510d8.cleverapps.io/new-experience', {
             method: 'post',
             body: data
         })
@@ -68,16 +70,38 @@ class ExperienceContainer extends React.Component {
         
     }
 
-    componentDidUpdate() {
-    }
-
     render() {
         return(
             <Container fluid={true} className="experience">
                 <Container id="experienceScroll">
                     <div className="experience-section">
                         <h2 className="text-center">My experiences</h2>
-                        <p className="text-center">Here are most of the websites I fully/partly did</p>
+                        {
+                            this.state.experiences.length === 0 ? 
+                            <div className="loader">
+                                <Loader 
+                                type="Plane"
+                                color="#00BFFF"
+                                height={300}
+                                width={300}
+                                /> 
+                            </div> :
+                            <div>
+                                <p className="text-center">Here are most of the websites I fully/partly did</p>
+                                <Row>
+                                    {
+                                        this.state.experiences.map(experience => {
+                                            return(
+                                                <Col xs={12} lg={4}>
+                                                    <Experience experienceData = {experience} />
+                                                </Col>
+                                            )
+                                        })
+                                    }                            
+                                </Row>
+                            </div>
+                        }
+                        {/* <p className="text-center">Here are most of the websites I fully/partly did</p>
                         <Row>
                             {
                                 this.state.experiences.map(experience => {
@@ -88,7 +112,7 @@ class ExperienceContainer extends React.Component {
                                     )
                                 })
                             }                            
-                        </Row>
+                        </Row> */}
                     </div>
                 </Container>
             </Container>

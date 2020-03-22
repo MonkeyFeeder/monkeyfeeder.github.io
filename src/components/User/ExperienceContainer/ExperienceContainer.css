@@ -1,8 +1,6 @@
 .experience.container-fluid {
     background-color: #FF7F51;
-} 
-
-/* background-color: #FF6B35; */
+}
 
 .experience-section {
     padding-top: 30px;
@@ -12,12 +10,23 @@
 
 .experience-section > h2 {
     color: white;
-    font-size: 70px;
+    font-size: 48px;
     font-weight: 300;
 }
 
-.experience-section > p {
+.experience-section > div > p {
     color: white;
     font-size: 20px;
     padding-bottom: 20px;
+}
+
+.experience-section .loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-section a:hover {
+    color: #FF7F51;
 }

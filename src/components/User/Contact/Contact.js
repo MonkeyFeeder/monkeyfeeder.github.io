@@ -36,7 +36,7 @@ class Contact extends React.Component {
     }
 
     onSubmit = () => {
-        fetch('http://localhost:3001/send-email', {
+        fetch('https://app-d077afa0-d0a4-4d67-8720-1d7a756510d8.cleverapps.io/send-email', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

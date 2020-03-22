@@ -3,6 +3,9 @@
 }
 
 .contact-section > h2 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
     padding-bottom: 20px;
 }
 
@@ -10,7 +13,24 @@
     margin-bottom: 20px;
 }
 
+.contact-section form {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .contact-section button {
     display: block;
     margin: 0 auto 20px;
+}
+
+@media (min-width: 768px) {
+    .contact-section form {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .contact-section > h2 {
+        text-align: left;
+        width: 60%;
+    }
 }

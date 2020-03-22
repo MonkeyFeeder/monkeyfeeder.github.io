@@ -8,6 +8,7 @@
     height: 255px;
     border-radius: 50%;
     background-color: #f8f9fa !important;
+    margin: 0 auto;
 }
 
 .skill-img-wrap img {

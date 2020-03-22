@@ -1,4 +1,5 @@
 import React from 'react';
+import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Skill from '../Skill/Skill';
 import Container from 'react-bootstrap/Container';
@@ -52,7 +53,9 @@ const SkillsContainer = (props) => {
                         {
                             listOfSkills.map(skill => {
                                 return (
-                                    <Skill name={skill.name} imgUrl={skill.img} />
+                                    <Col xs={12} md={3}>
+                                        <Skill name={skill.name} imgUrl={skill.img} />
+                                    </Col>
                                 )
                             })
                         }

@@ -13,7 +13,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      urlWebsite: 'http://localhost/mael-landrin/mael-landrin/public',
+      urlWebsite: 'https://downloadpow.github.io/mael-landrin',
       // isLoggedIn: false,
     }
   }
