@@ -45,6 +45,7 @@ class Contact extends React.Component {
                 message: this.state.contactMessage
             })
         })
+        .then(resp => console.log(resp))
     }
 
     render() {
@@ -63,9 +64,9 @@ class Contact extends React.Component {
                     <Form.Group controlId="contactForm.contactMessage" id="contactMessage">
                         <Form.Control as="textarea" rows="5" placeholder="Your message" onChange={this.onMessageChange} />
                     </Form.Group>
-                    <Button variant="primary" type="submit" onClick={this.onSubmit}>
+                    <a className="btn-form" onClick={this.onSubmit}>
                         Send email
-                    </Button>
+                    </a>
                 </Form>
             </Container>
         )
