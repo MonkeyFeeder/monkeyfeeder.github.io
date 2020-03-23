@@ -3,7 +3,6 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 
 import './Contact.css';
 
@@ -45,14 +44,20 @@ class Contact extends React.Component {
                 message: this.state.contactMessage
             })
         })
-        .then(resp => console.log(resp))
+        .then(resp => {
+            if(resp.status === 400) {
+                document.getElementById('contactFalse').classList.add('contact-displayed');
+            } else if(resp.status === 200) {
+                document.getElementById('contactTrue').classList.add('contact-displayed');
+            }
+        })
     }
 
     render() {
         return(
             <Container className="contact-section">
                 <h2>Contact me</h2>
-                <Form>
+                <Form className="contact-form">
                     <Form.Row className="toprow-contact">
                         <Col>
                             <Form.Control id="contactName" placeholder="Name" onChange={this.onNameChange} />
@@ -67,6 +72,8 @@ class Contact extends React.Component {
                     <a className="btn-form" onClick={this.onSubmit}>
                         Send email
                     </a>
+                    <div className="error-contact" id="contactFalse">Error sending email, please try again :(</div>
+                    <div className="success-contact" id="contactTrue">Email sent successfully, thanks :)</div>
                 </Form>
             </Container>
         )
