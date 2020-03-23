@@ -57,7 +57,7 @@ class Contact extends React.Component {
                             <Form.Control id="contactName" placeholder="Name" onChange={this.onNameChange} />
                         </Col>
                         <Col>
-                            <Form.Control id="contactAddress" placeholder="Email address" onChange={this.onAddressChange} />
+                            <Form.Control id="contactAddress" type="email" placeholder="Email address" onChange={this.onAddressChange} />
                         </Col>
                     </Form.Row>
                     <Form.Group controlId="contactForm.contactMessage" id="contactMessage">
