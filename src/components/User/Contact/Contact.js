@@ -46,8 +46,10 @@ class Contact extends React.Component {
         })
         .then(resp => {
             if(resp.status === 400) {
+                document.getElementById('contactTrue').classList.remove('contact-displayed');
                 document.getElementById('contactFalse').classList.add('contact-displayed');
             } else if(resp.status === 200) {
+                document.getElementById('contactFalse').classList.remove('contact-displayed');
                 document.getElementById('contactTrue').classList.add('contact-displayed');
             }
         })
