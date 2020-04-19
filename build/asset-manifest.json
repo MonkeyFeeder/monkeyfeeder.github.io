@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mael-landrin/static/css/main.2a62b380.chunk.css",
-    "main.js": "/mael-landrin/static/js/main.6df3b92c.chunk.js",
-    "main.js.map": "/mael-landrin/static/js/main.6df3b92c.chunk.js.map",
+    "main.js": "/mael-landrin/static/js/main.50d2ae2b.chunk.js",
+    "main.js.map": "/mael-landrin/static/js/main.50d2ae2b.chunk.js.map",
     "runtime-main.js": "/mael-landrin/static/js/runtime-main.7a1db760.js",
     "runtime-main.js.map": "/mael-landrin/static/js/runtime-main.7a1db760.js.map",
     "static/css/2.f26a4486.chunk.css": "/mael-landrin/static/css/2.f26a4486.chunk.css",
     "static/js/2.8fe4b8b5.chunk.js": "/mael-landrin/static/js/2.8fe4b8b5.chunk.js",
     "static/js/2.8fe4b8b5.chunk.js.map": "/mael-landrin/static/js/2.8fe4b8b5.chunk.js.map",
     "index.html": "/mael-landrin/index.html",
-    "precache-manifest.4dd299f6e80703a38bbcb7be2fcff6d6.js": "/mael-landrin/precache-manifest.4dd299f6e80703a38bbcb7be2fcff6d6.js",
+    "precache-manifest.782060041d2783c677f58ac49deb1003.js": "/mael-landrin/precache-manifest.782060041d2783c677f58ac49deb1003.js",
     "service-worker.js": "/mael-landrin/service-worker.js",
     "static/css/2.f26a4486.chunk.css.map": "/mael-landrin/static/css/2.f26a4486.chunk.css.map",
     "static/css/main.2a62b380.chunk.css.map": "/mael-landrin/static/css/main.2a62b380.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.f26a4486.chunk.css",
     "static/js/2.8fe4b8b5.chunk.js",
     "static/css/main.2a62b380.chunk.css",
-    "static/js/main.6df3b92c.chunk.js"
+    "static/js/main.50d2ae2b.chunk.js"
   ]
 }
