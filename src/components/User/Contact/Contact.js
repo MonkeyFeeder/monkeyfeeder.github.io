@@ -57,7 +57,7 @@ class Contact extends React.Component {
 
     render() {
         return(
-            <Container className="contact-section">
+            <Container className="contact-section" id="contactScroll">
                 <h2>Contact me</h2>
                 <Form className="contact-form">
                     <Form.Row className="toprow-contact">

@@ -17,7 +17,7 @@ const Navigation = () => {
                             <Nav.Link href="#aboutScroll" className="animated infinite pulse">About</Nav.Link>
                             <Nav.Link href="#experienceScroll" className="animated infinite pulse">Portfolio</Nav.Link>
                             <Nav.Link href="#skillScroll" className="animated infinite pulse">Skills</Nav.Link>
-                            <Nav.Link href="#link" className="animated infinite pulse">Contact</Nav.Link>
+                            <Nav.Link href="#contactScroll" className="animated infinite pulse">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

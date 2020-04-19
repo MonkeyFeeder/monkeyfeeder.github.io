@@ -13,3 +13,22 @@
         margin: 0 auto;
     }
 }
+
+@media (min-width: 768px) {
+    .picAndText {
+        display: flex;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    
+    .picAndText img {
+        width: 30%;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+    .picAndText p {
+        padding-left: 40px;
+        align-self: center;
+    }
+}
