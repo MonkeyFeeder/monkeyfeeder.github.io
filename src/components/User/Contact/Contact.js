@@ -71,7 +71,7 @@ class Contact extends React.Component {
                     <Form.Group controlId="contactForm.contactMessage" id="contactMessage">
                         <Form.Control as="textarea" rows="5" placeholder="Your message" onChange={this.onMessageChange} />
                     </Form.Group>
-                    <a className="btn-form" onClick={this.onSubmit}>
+                    <a className="btn-form" onClick={this.onSubmit} href="">
                         Send email
                     </a>
                     <div className="error-contact" id="contactFalse">Error sending email, please try again :(</div>

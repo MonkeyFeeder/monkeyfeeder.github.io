@@ -101,17 +101,27 @@ class ExperienceContainer extends React.Component {
                                 </Row>
                             </div>
                         }
-                        {/* <p className="text-center">Here are most of the websites I fully/partly did</p>
+                        {/* <p className="text-center">Add an experience</p>
                         <Row>
-                            {
-                                this.state.experiences.map(experience => {
-                                    return(
-                                        <Col xs={12} lg={4}>
-                                            <Experience experienceData = {experience} />
-                                        </Col>
-                                    )
-                                })
-                            }                            
+                            <Form id="formExperience">
+                                <Form.Group controlId="exampleForm.ControlInput1" onChange={this.onNameChange}>
+                                    <Form.Label>Name</Form.Label>
+                                    <Form.Control type="text" placeholder="Experience name" />
+                                </Form.Group> 
+                                <Form.Group controlId="exampleForm.ControlInput1" onChange={this.onDescriptionChange}>
+                                    <Form.Label>Description</Form.Label>
+                                    <Form.Control type="text" placeholder="Experience description" />
+                                </Form.Group> 
+                                <Form.Group controlId="exampleForm.ControlInput1" onChange={this.onUrlChange}>
+                                    <Form.Label>URL</Form.Label>
+                                    <Form.Control type="text" placeholder="Experience URL" />
+                                </Form.Group>  
+                                <Form.Group controlId="exampleForm.ControlInput1" onChange={this.onFileChange}>
+                                    <Form.Label>File</Form.Label>
+                                    <Form.Control type="file" placeholder="Experience file" />
+                                </Form.Group> 
+                                <button onClick={this.onSubmitChange}>Submit experience</button>
+                            </Form>                           
                         </Row> */}
                     </div>
                 </Container>

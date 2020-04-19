@@ -6,7 +6,7 @@ import './Experience.css';
 const Experience = (props) => {
     return(
         <Card className="card-experience">
-            <a href={props.experienceData.experienceurl} target="_blank" >
+            <a href={props.experienceData.experienceurl} target="_blank" rel="noopener noreferrer">
                 <Card.Img variant="top" src={props.experienceData.experiencefileurl} alt={props.experienceData.experiencename} />
                 <Card.Body>
                     <Card.Title>{props.experienceData.experiencename}</Card.Title>
