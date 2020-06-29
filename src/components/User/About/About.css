@@ -5,6 +5,15 @@
     margin: 0 auto;
 }
 
+.picAndText img {
+    max-width: unset;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
 @media (min-width: 768px) {
     .about-section {
         padding-top: 90px;
@@ -23,8 +32,6 @@
     
     .picAndText img {
         width: 30%;
-        height: auto;
-        border-radius: 50%;
     }
     
     .picAndText p {

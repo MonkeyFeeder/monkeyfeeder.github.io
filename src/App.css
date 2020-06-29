@@ -15,6 +15,7 @@ body a:hover {
 body h2 {
     font-size: 50px;
     font-weight: 300;
+    text-align: center;
 }
 
 body p {
@@ -26,4 +27,8 @@ body p {
         font-size: 60px;
         font-weight: 300;
     }
+}
+
+body img {
+    max-width: 100%;
 }
