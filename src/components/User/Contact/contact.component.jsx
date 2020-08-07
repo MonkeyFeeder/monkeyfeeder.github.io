@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 
+import CustomButton from '../custom-button/custom-button.component';
+
 import './Contact.css';
 
 const Contact = () => {
@@ -71,9 +73,9 @@ const Contact = () => {
                 <Form.Group controlId="contactForm.contactMessage" id="contactMessage">
                     <Form.Control as="textarea" rows="5" placeholder="Your message" onChange={onMessageChange} />
                 </Form.Group>
-                <a className="btn-form" onClick={onSubmit} href="">
-                    Send email
-                </a>
+                <CustomButton type="button" onSubmit={onSubmit}>
+                    Send
+                </CustomButton>
                 <div className="error-contact" id="contactFalse">Error sending email, please try again :(</div>
                 <div className="success-contact" id="contactTrue">Email sent successfully, thanks :)</div>
             </Form>

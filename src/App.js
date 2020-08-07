@@ -3,11 +3,11 @@ import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Navigation from './components/User/Navigation/Navigation';
-import ExperienceContainer from './components/User/ExperienceContainer/ExperienceContainer';
-import SkillsContainer from './components/User/SkillsContainer/SkillsContainer';
-import About from './components/User/About/About';
-import Contact from './components/User/Contact/Contact';
+import Navigation from './components/User/navigation/navigation.component';
+import ExperienceContainer from './components/User/experience-container/experience-container.component';
+import SkillsContainer from './components/User/skills-container/skills-container.component';
+import About from './components/User/about/about.component';
+import Contact from './components/User/contact/contact.component';
 
 class App extends React.Component {
   constructor(props) {

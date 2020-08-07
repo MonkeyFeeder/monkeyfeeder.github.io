@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 
 import picMyself from './photo-myself.JPG';
 
-import './About.css';
+import './about.css';
 
 const About = () => {
     return(
