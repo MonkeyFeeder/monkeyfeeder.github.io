@@ -36,26 +36,50 @@ const Contact = () => {
         changeMessage(event.target.value);
     }
 
-    const onSubmit = (event) => {
+    const onSubmit = async (event) => {
         event.preventDefault();
-        fetch('https://app-d077afa0-d0a4-4d67-8720-1d7a756510d8.cleverapps.io/send-email', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                name: contactName,
-                address: contactAddress,
-                message: contactMessage
-            })
-        })
-        .then(resp => {
-            if(resp.status === 400) {
-                document.getElementById('contactTrue').classList.remove('contact-displayed');
-                document.getElementById('contactFalse').classList.add('contact-displayed');
-            } else if(resp.status === 200) {
-                document.getElementById('contactFalse').classList.remove('contact-displayed');
-                document.getElementById('contactTrue').classList.add('contact-displayed');
-            }
-        })
+
+        const templateId = 'template_c2dM1esL';
+
+        sendFeedback(templateId, {message_html: contactMessage, from_name: contactName, reply_to: contactAddress});
+
+        
+
+        // fetch('https://app-d077afa0-d0a4-4d67-8720-1d7a756510d8.cleverapps.io/send-email', {
+        //     method: 'POST',
+        //     headers: {'Content-Type': 'application/json'},
+        //     body: JSON.stringify({
+        //         name: contactName,
+        //         address: contactAddress,
+        //         message: contactMessage
+        //     })
+        // })
+        // .then(resp => {
+        //     if(resp.status === 400) {
+        //         document.getElementById('contactTrue').classList.remove('contact-displayed');
+        //         document.getElementById('contactFalse').classList.add('contact-displayed');
+        //     } else if(resp.status === 200) {
+        //         document.getElementById('contactFalse').classList.remove('contact-displayed');
+        //         document.getElementById('contactTrue').classList.add('contact-displayed');
+        //     }
+        // })
+    }
+
+    const sendFeedback = (templateId, variables) => {
+        window.emailjs.send(
+          'gmail', templateId,
+          variables
+          ).then(res => {
+            document.getElementById('contactFalse').classList.remove('contact-displayed');
+            document.getElementById('contactTrue').classList.add('contact-displayed');
+            document.querySelector('.contact-form').reset();
+            console.log('test');
+          })
+          .catch(err => {
+            document.getElementById('contactTrue').classList.remove('contact-displayed');
+            document.getElementById('contactFalse').classList.add('contact-displayed');
+            console.log('fail');
+          })
     }
 
     return(

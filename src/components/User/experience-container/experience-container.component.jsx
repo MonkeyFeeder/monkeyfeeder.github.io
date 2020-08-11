@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import ExperienceForm from '../experience-form/experience-form.component';
+// import ExperienceForm from '../experience-form/experience-form.component';
 
 import './ExperienceContainer.css';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
@@ -93,7 +93,7 @@ const ExperienceContainer = () => {
                     }
                 </div>
             </Container>
-            <ExperienceForm handleChange={handleChange} handleFileChange={handleFileChange} onSubmitChange={onSubmitChange} />
+            {/* <ExperienceForm handleChange={handleChange} handleFileChange={handleFileChange} onSubmitChange={onSubmitChange} /> */}
         </Container>
     )
 }
