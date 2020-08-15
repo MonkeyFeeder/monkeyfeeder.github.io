@@ -12,7 +12,7 @@ const About = () => {
                 <h2>About me</h2>
                 <div className="picAndText">
                     <img src={picMyself} alt="it's-a me a-Mael" />
-                    <p>I'm a freelance web developer. I dropped out of college without a degree because I was bored of school. I started web development with the basics of HTML and CSS, and learnt on the job.</p>
+                    <p>I'm a freelance web developer. I studied for 3 years in college ( first 2 years studying Business and Languages, third year studying Web Marketing, Design and Development ). I learnt WordPress during my first contract, and taught myself React on my free time.</p>
                 </div>
                 <h2>My skills and experiences</h2>
                 <p>I've been working with WordPress for more than 2 years ( with minimal plugins, only CF7, ACF ), learnt JavaScript for animation purposes during these 2 years. I also started learning React and Node.JS in November 2019.</p>

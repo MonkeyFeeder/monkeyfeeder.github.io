@@ -5,6 +5,10 @@
     margin: 0 auto;
 }
 
+.about-section .picAndText p {
+    padding: 30px 10px 20px;
+}
+
 .picAndText img {
     max-width: unset;
     width: 50%;
