@@ -22,6 +22,10 @@ const ExperienceForm = ({ handleChange, handleFileChange, onSubmitChange }) => {
                         <Form.Control type="text" name="description" placeholder="Experience description" onChange={(event) => handleChange(event)} />
                     </Form.Group> 
                     <Form.Group controlId="exampleForm.ControlInput1" >
+                        <Form.Label>Skills ( separated by commas )</Form.Label>
+                        <Form.Control type="text" name="skills" placeholder="Experience skills" onChange={(event) => handleChange(event)} />
+                    </Form.Group> 
+                    <Form.Group controlId="exampleForm.ControlInput1" >
                         <Form.Label>URL</Form.Label>
                         <Form.Control type="text" name="url" placeholder="Experience URL" onChange={(event) => handleChange(event)} />
                     </Form.Group>  

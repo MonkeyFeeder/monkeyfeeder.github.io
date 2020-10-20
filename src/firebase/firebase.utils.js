@@ -12,7 +12,7 @@ const config = {
     appId: "1:985005520082:web:60e004e2f3b7fecd39a90b"
 };
 
-export const addExperience = async (name, description, url, fileExperience) => {
+export const addExperience = async (name, description, url, fileExperience, skills) => {
     const experienceSnapshot = await firestore.collection('experiences').doc(name).get();
 
     if(!experienceSnapshot.exists) {
@@ -30,7 +30,8 @@ export const addExperience = async (name, description, url, fileExperience) => {
             name,
             url,
             description,
-            fileUrl
+            fileUrl,
+            skills
         });
 
         return "Experience successfully added";
