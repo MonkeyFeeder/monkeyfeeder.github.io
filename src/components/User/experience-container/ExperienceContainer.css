@@ -35,7 +35,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 23%;
+    width: 60%;
     margin-bottom: 40px;
 }
 
@@ -53,4 +53,30 @@
     background-color: white;
     color: #FF7F51;
     transition: all .2s linear;
+}
+
+@media (min-width: 768px) {
+    .experience-section .filters {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 23%;
+        margin-bottom: 40px;
+    }
+    
+    .experience-section .filters span.item-filter {
+        color: white;
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: all .2s linear;
+    }
+    
+    .experience-section .filters span.item-filter.active {
+        background-color: white;
+        color: #FF7F51;
+        transition: all .2s linear;
+    }
 }
