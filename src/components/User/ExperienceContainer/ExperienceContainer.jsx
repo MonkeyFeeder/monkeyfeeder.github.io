@@ -17,7 +17,8 @@ const ExperienceContainer = () => {
     const [experienceData, setExperienceData] = useState([]);
     const [filteredExperiences, setFilteredExperiences] = useState([]);
     const [filter, setFilter] = useState('');
-    
+    const [descriptionLength, setDescriptionLength] = useState(0);
+
     const [newExperienceData, setNewExperienceData] = useState({
         name: '',
         description: '',
@@ -28,8 +29,12 @@ const ExperienceContainer = () => {
 
     useEffect(() => {
         const fetchAndSetExperiences = async () => {
-            const experiences = await getExperiences();
-    
+            let experiences = await getExperiences();
+
+            experiences = experiences.sort((a, b) => {
+                return a.order - b.order;
+            })
+
             setExperienceData(experiences);
         }
         fetchAndSetExperiences();
@@ -39,6 +44,8 @@ const ExperienceContainer = () => {
         let { name, value } = event.target;
         if(name === 'skills') {
             value = value.split(',');
+        } else if(name === 'description') {
+            setDescriptionLength(value.length);
         }
         setNewExperienceData({...newExperienceData, [name]: value });
     }
@@ -67,21 +74,11 @@ const ExperienceContainer = () => {
     }
 
     const handleFilter = (e) => {
-        console.log(e.target);
         const newFilter = e.target.dataset.name;
 
         if(document.querySelectorAll('.experience-section .filters .item-filter.active').length !== 0) {
             document.querySelectorAll('.experience-section .filters .item-filter.active')[0].classList.remove('active');
-        // } else if (document.querySelectorAll('.experience-section .filters .item-filter.active').length !== 0 && e.target.classList.contains('active')) {
-            // document.querySelectorAll('.experience-section .filters .item-filter.active')[0].classList.remove('active');
         }
-
-        // if(!e.target.classList.contains('active')) {
-        //     e.target.classList.add('active');
-        // } else {
-        //     e.target.classList.remove('active');
-        // }
-        
         
         if(filter === newFilter) {
             setFilter('');
@@ -143,7 +140,7 @@ const ExperienceContainer = () => {
                     }
                 </div>
             </Container>
-            <ExperienceForm handleChange={handleChange} handleFileChange={handleFileChange} onSubmitChange={onSubmitChange} />
+            {/*<ExperienceForm handleChange={handleChange} handleFileChange={handleFileChange} onSubmitChange={onSubmitChange} descriptionLength={descriptionLength} />*/}
         </Container>
     )
 }

@@ -51,9 +51,9 @@ const SkillsContainer = (props) => {
                 <div className="skillscontainer">
                     <Row>
                         {
-                            listOfSkills.map(skill => {
+                            listOfSkills.map((skill, index) => {
                                 return (
-                                    <Col xs={12} md={3}>
+                                    <Col xs={12} md={3} key={index}>
                                         <Skill name={skill.name} imgUrl={skill.img} />
                                     </Col>
                                 )

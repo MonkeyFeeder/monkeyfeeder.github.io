@@ -7,7 +7,7 @@ import CustomButton from '../CustomButton/CustomButton';
 
 import './ExperienceForm.scss';
 
-const ExperienceForm = ({ handleChange, handleFileChange, onSubmitChange }) => {
+const ExperienceForm = ({ handleChange, handleFileChange, onSubmitChange, descriptionLength }) => {
     return(
         <div className="experience-form">
             <p className="text-center">Add an experience</p>
@@ -18,7 +18,7 @@ const ExperienceForm = ({ handleChange, handleFileChange, onSubmitChange }) => {
                         <Form.Control type="text" name="name" placeholder="Experience name" onChange={(event) => handleChange(event)} />
                     </Form.Group> 
                     <Form.Group controlId="exampleForm.ControlInput1" >
-                        <Form.Label>Description</Form.Label>
+                        <Form.Label style={{display: 'flex', justifyContent: 'space-between'}}>Description <span>{descriptionLength}/200 characters</span></Form.Label>
                         <Form.Control type="text" name="description" placeholder="Experience description" onChange={(event) => handleChange(event)} />
                     </Form.Group> 
                     <Form.Group controlId="exampleForm.ControlInput1" >
