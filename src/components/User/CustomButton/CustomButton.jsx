@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './custom-button.styles.scss';
+import './CustomButton.scss';
 
 const CustomButton = ({ onSubmit, children, ...otherProps }) => {
     return (

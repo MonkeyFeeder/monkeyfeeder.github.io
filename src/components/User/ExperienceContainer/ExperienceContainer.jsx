@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Experience from '../experience/experience.component';
+import Experience from '../Experience/Experience';
 import Loader from 'react-loader-spinner';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import ExperienceForm from '../experience-form/experience-form.component';
+import ExperienceForm from '../ExperienceForm/ExperienceForm';
 
 import './ExperienceContainer.css';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';

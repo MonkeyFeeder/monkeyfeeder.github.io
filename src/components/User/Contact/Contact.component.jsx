@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 
-import CustomButton from '../custom-button/custom-button.component';
+import CustomButton from '../CustomButton/CustomButton';
 
 import './Contact.css';
 

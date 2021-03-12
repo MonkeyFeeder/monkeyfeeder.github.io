@@ -3,9 +3,9 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Form from 'react-bootstrap/Form';
 
-import CustomButton from '../custom-button/custom-button.component';
+import CustomButton from '../CustomButton/CustomButton';
 
-import './experience-form.styles.scss';
+import './ExperienceForm.scss';
 
 const ExperienceForm = ({ handleChange, handleFileChange, onSubmitChange }) => {
     return(

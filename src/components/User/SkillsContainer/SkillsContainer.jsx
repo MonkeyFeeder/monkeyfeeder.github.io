@@ -1,7 +1,7 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Skill from '../skill/skill.component';
+import Skill from '../Skill/Skill';
 import Container from 'react-bootstrap/Container';
 
 import './SkillsContainer.css';
