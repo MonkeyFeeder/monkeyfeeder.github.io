@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 
 import picMyself from './photo-myself.JPG';
+import Github from './github.png';
 
 import './About.css';
 
@@ -14,11 +15,18 @@ const About = () => {
                     <div className="img-box">
                         <img src={picMyself} alt="it's-a me a-Mael" />
                     </div>
-                    <p>I'm a freelance web developer. I studied for 3 years in college ( first 2 years studying Business and Languages, third year studying Web Marketing, Design and Development ). I learnt WordPress during my first contract, and taught myself React on my free time.</p>
+                    <div class="intro-txt">
+                        <p>I'm a Software Engineer. I studied for 3 years in college ( first 2 years studying Business and Languages, third year studying Web Marketing, Design and Development ). I started learning WordPress in 2017, and taught myself React on my free time, starting in 2019.</p>
+                        <a href="https://github.com/MonkeyFeeder" target="_blank" rel="noopener noreferrer" className="img-github"><img src={Github} alt="My Github Page" /></a>
+                    </div>
                 </div>
+
                 <h2>My skills and experiences</h2>
-                <p>I've been working with WordPress for more than 2 years ( with minimal plugins, only CF7, ACF ), learnt JavaScript for animation purposes during these 2 years. I also started learning React and Node.JS in August 2019.</p>
-                <p>I made this website using React and Node as a training project, and I've got a few projects in mind that I'll add to my own website. So stay tuned :)</p>
+                <div class="chunk-of-text">
+                    <p>I've been a developer for almost 4 years, and I've helped many brands improve their online presence and create their website.</p>
+                    <p>I started as a WordPress Developer, and got my first contract with Lactalis, creating the websites of many well-known brands ( Siggis, President, Galbani.. ).</p>
+                    <p>During my time at Lactalis, I started learning and working with React. It's been about 2 years now.</p>
+                </div>
             </div>
         </Container>
     )

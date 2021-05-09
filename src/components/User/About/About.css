@@ -1,51 +1,92 @@
 .about-section {
-    padding-top: 90px;
-    padding-bottom: 40px;
-    width: 100%;
-    margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .about-section .picAndText p {
-    padding: 30px 10px 20px;
+  padding: 30px 10px 20px;
+  margin-bottom: 0;
+}
+
+.about-section .chunk-of-text {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.about-section .intro-txt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about-section a.img-github {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  margin-bottom: 30px;
+}
+
+.about-section a.img-github img {
+  width: 40px;
 }
 
 .picAndText img {
-    max-width: unset;
-    width: 50%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
+  max-width: unset;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {
-    .about-section {
-        padding-top: 90px;
-        padding-bottom: 40px;
-        width: 90%;
-        margin: 0 auto;
-    }
+  .about-section {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    width: 90%;
+    margin: 0 auto;
+  }
 
-    .picAndText {
-        display: flex;
-        margin-bottom: 40px;
-        margin-top: 30px;
-    }
+  .picAndText {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
 
-    .picAndText .img-box {
-        padding-top: 30px;
-        width: 30%;
-    }
-    
-    .picAndText img {
-        width: 100%;
-        height: auto;
-        max-width: 225px;
-    }
-    
-    .picAndText p {
-        padding-left: 40px;
-        align-self: center;
-        width: 70%;
-    }
+  .picAndText .img-box {
+    padding-top: 30px;
+    width: 70%;
+  }
+
+  .picAndText img {
+    width: 100%;
+    height: auto;
+    max-width: 225px;
+  }
+
+  .picAndText p {
+    padding-left: 40px;
+    width: 70%;
+  }
+
+  .about-section .intro-txt {
+    padding-left: 10px;
+    padding-top: 30px;
+  }
+
+  .about-section a.img-github {
+    display: inline;
+    margin: 0;
+  }
+
+  .about-section a.img-github img {
+    margin-left: 20px;
+  }
+
+  .about-section .chunk-of-text {
+    width: 65%;
+    margin: 0 auto;
+  }
 }
