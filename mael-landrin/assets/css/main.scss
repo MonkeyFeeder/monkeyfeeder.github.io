@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+$electric-blue: #3d4be1;
+
+$body-color: #f3f7f6;
+$background-color: #f3f7f6;
+$text-color: $electric-blue !default;
+$primary-color: $electric-blue !default;
+$link-color: $electric-blue !default;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import 'minimal-mistakes'; // main partials
+
+$electric-blue: #3d4be1;
+
+$body-color: #f3f7f6;
+$background-color: #f3f7f6;
+$text-color: $electric-blue !default;
+$primary-color: $electric-blue !default;
+$link-color: $electric-blue !default;

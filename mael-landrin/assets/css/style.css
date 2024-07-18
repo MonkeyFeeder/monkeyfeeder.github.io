@@ -1,0 +1,68 @@
+/* body {
+    background-color: #f3f7f6;
+} */
+
+/* ///BUTTONS/// */
+
+.btn--primary,
+.btn--primary:visited {
+    background-color: #3d4be1 !important;
+}
+
+/* ///END BUTTONS/// */
+.showcase {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.showcase h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.offer {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #34495e;
+}
+
+.offer .price {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.offer .advantages {
+    list-style: none;
+    padding: 0;
+}
+
+.offer .advantages li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+@media (min-width: 768px) {
+    .showcase {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .offer {
+        flex: 0 0 48%;
+        margin-bottom: 2rem;
+    }
+}

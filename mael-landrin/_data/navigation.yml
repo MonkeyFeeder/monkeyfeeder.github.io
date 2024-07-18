@@ -1,0 +1,10 @@
+# Navigation links
+main:
+    - title: 'Accueil'
+      url: '/'
+    - title: 'Références'
+      url: '/experiences/'
+    - title: 'A propos'
+      url: '/a-propos/'
+    - title: 'Contact'
+      url: '/contact/'

@@ -1,0 +1,14 @@
+Mael Landrin:
+    name: 'Mael Landrin'
+    bio: 'Le développeur Web et Mobile qui vous accompagne sur vos projets numériques, de la conception à la mise en ligne, et ce 2x moins cher que les agences classiques !'
+    avatar: '/assets/images/bio-photo-2.jpg'
+    links:
+        - label: 'Email'
+          icon: 'fas fa-fw fa-envelope-square'
+          url: 'mailto:mael.landrin@gmail.com'
+        - label: 'Website'
+          icon: 'fas fa-fw fa-link'
+          url: 'https://mael-landrin.com'
+        - label: 'LinkedIn'
+          icon: 'fab fa-fw fa-linkedin'
+          url: 'https://www.linkedin.com/in/mael-landrin/'
