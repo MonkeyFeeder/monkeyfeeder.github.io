@@ -1,0 +1,141 @@
+/* Copyright comment */
+@import 'minimal-mistakes/copyright';
+
+/* Variables */
+@import 'minimal-mistakes/variables';
+
+/* Mixins and functions */
+@import 'minimal-mistakes/vendor/breakpoint/breakpoint';
+@include breakpoint-set('to ems', true);
+@import 'minimal-mistakes/vendor/magnific-popup/magnific-popup'; // Magnific Popup
+@import 'minimal-mistakes/vendor/susy/susy';
+@import 'minimal-mistakes/mixins';
+
+/* Core CSS */
+@import 'minimal-mistakes/reset';
+@import 'minimal-mistakes/base';
+@import 'minimal-mistakes/forms';
+@import 'minimal-mistakes/tables';
+@import 'minimal-mistakes/animations';
+
+/* Components */
+@import 'minimal-mistakes/buttons';
+@import 'minimal-mistakes/notices';
+@import 'minimal-mistakes/masthead';
+@import 'minimal-mistakes/navigation';
+@import 'minimal-mistakes/footer';
+@import 'minimal-mistakes/search';
+@import 'minimal-mistakes/syntax';
+
+/* Utility classes */
+@import 'minimal-mistakes/utilities';
+
+/* Layout specific */
+@import 'minimal-mistakes/page';
+@import 'minimal-mistakes/archive';
+@import 'minimal-mistakes/sidebar';
+@import 'minimal-mistakes/print';
+
+$electric-blue: #3d4be1;
+$rich-black: #030412;
+$anti-flash-white: #f3f7f6;
+
+.btn--primary,
+.btn--primary:link,
+.btn--primary:visited {
+    background-color: $electric-blue;
+
+    &:hover,
+    &:focus {
+        background-color: darken($electric-blue, 20%);
+    }
+}
+
+#experiencesGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+#experienceSelector {
+    margin-bottom: 30px;
+}
+
+.experience {
+    width: calc(33.333% - 10px);
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px; // Required for the flip effect
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.experience-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.experience:hover .experience-inner {
+    transform: rotateY(180deg);
+}
+
+.experience .front > div:first-child {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; // Hide the back side when flipped
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.front {
+    background-size: cover;
+    color: white;
+}
+
+.back {
+    background-color: darken($electric-blue, 20%);
+    color: white;
+    transform: rotateY(180deg); // Flip the back side
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.experience .name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    left: 0;
+    z-index: 1;
+}
+
+.experience .tech-stack {
+    display: flex; // Make sure this is visible and centered
+    color: white;
+    font-size: 14px; // Adjust font size as needed
+}

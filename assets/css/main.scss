@@ -8,5 +8,14 @@ $text-color: $electric-blue !default;
 $primary-color: $electric-blue !default;
 $link-color: $electric-blue !default;
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import 'minimal-mistakes'; // main partials
+$link-color: red;
+
+body * {
+    border: 1px solid red;
+}
+
+@import 'custom/custom-variables';
+@import 'minimal-mistakes';
+
+// @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+// @import 'minimal-mistakes'; // main partials
