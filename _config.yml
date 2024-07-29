@@ -23,7 +23,7 @@ email: mael.landrin@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
     Développeur Web et Mobile, je vous accompagne sur vos projets numériques, de la conception à la mise en ligne, et le 2x moins cher que les agences classiques !
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://mael-landrin.com' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'https://monkeyfeeder.github.io/mael-landrin' # the base hostname & protocol for your site, e.g. http://example.com
 github_username: monkeyfeeder
 
 # Build settings
