@@ -63,7 +63,7 @@ feature_row5:
 <section class="showcase">
     <div class="offer">
         <h2>Site<br/> Vitrine</h2>
-        <p class="price">2000€</p>
+        <p class="price">A partir de 2000€</p>
         <ul class="advantages">
             <li>Maquettage + Dévelopement + Référencement + Livraison</li>
             <li>Présenter son entreprise</li>
