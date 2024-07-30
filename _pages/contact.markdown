@@ -26,17 +26,3 @@ Cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails"
 </script>
 
 <!-- Cal inline embed code ends -->
-
-Ou envoyez moi un message:
-
-<form action="https://formspree.io/your-email@example.com" method="POST">
-  <label>
-    Email:
-    <input type="email" name="_replyto">
-  </label>
-  <label>
-    Message:
-    <textarea name="message"></textarea>
-  </label>
-  <input type="submit" value="Envoyer">
-</form>
