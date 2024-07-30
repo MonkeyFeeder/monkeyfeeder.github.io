@@ -139,3 +139,50 @@ $anti-flash-white: #f3f7f6;
     color: white;
     font-size: 14px; // Adjust font size as needed
 }
+
+.page__hero--overlay {
+    background-size: contain;
+    background-position-x: calc(100% - 10%);
+}
+
+.page__hero--overlay p.page__lead {
+    width: 50%;
+}
+
+.page__hero--overlay p.page__lead,
+.page__hero--overlay p .btn {
+    color: #343434;
+    text-shadow: none;
+}
+
+.page__hero--overlay h1#page-title {
+    color: #3d4be1;
+    text-shadow: none;
+}
+
+.page__hero--overlay p .btn--light-outline {
+    border: 1px solid #343434;
+    background-color: #3d4be1;
+    color: white;
+
+    &:hover,
+    &:focus {
+        background-color: #19249f;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .page__hero--overlay {
+        background-size: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page__hero--overlay {
+        background-image: none !important;
+    }
+
+    .page__hero--overlay p.page__lead {
+        width: 100%;
+    }
+}

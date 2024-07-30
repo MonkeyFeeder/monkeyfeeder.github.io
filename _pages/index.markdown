@@ -3,9 +3,7 @@ layout: splash
 title: 'Mael Landrin'
 permalink: '/'
 header:
-    overlay_color: '#333'
-    overlay_filter: '0.'
-    overlay_image: /assets/images/unsplash-image-1.jpg
+    overlay_image: /assets/images/developer-illustration.svg
     actions:
         - label: 'Apprenez à me connaître'
           url: '/a-propos/'
